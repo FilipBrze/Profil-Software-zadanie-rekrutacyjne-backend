@@ -24,12 +24,12 @@ przetestować skrypt za pomocą pytest należy wykomentować ostatnią linię ko
 main() --> #main()
 
 Główne zasady wpisywania komend:
--spacje i wielkość liter jest bez znaczenia
--należy zachować kolejność podawania parametrów
--wszystkie komendy w formacie jakaś_komenda(parametr1;parametr2;...)
--ważne jest aby zachować polskie znaki (np. województwo Slaskie nie zostanie rozpoznane - należy podać Śląskie)
--należy pamiętać aby parametry oddzielać średnikiem i zapisywać zbiórczo w nawiasie okrągłym
--płeć podaje się jako literę k dla kobiet i literę m dla mężczyzn. Jest opcjonalna dla każdej funkcji więc nie trzeba jej 
+*spacje i wielkość liter jest bez znaczenia
+*należy zachować kolejność podawania parametrów
+*wszystkie komendy w formacie jakaś_komenda(parametr1;parametr2;...)
+*ważne jest aby zachować polskie znaki (np. województwo Slaskie nie zostanie rozpoznane - należy podać Śląskie)
+*należy pamiętać aby parametry oddzielać średnikiem i zapisywać zbiórczo w nawiasie okrągłym
+*płeć podaje się jako literę k dla kobiet i literę m dla mężczyzn. Jest opcjonalna dla każdej funkcji więc nie trzeba jej 
 podawać, przy czym nie ma znaczenia czy nie poda się nic poza resztą wymaganych parametrów czy zostawi puste miejsce po ostatnim
 średniku (płeć zawsze jest podawana na końcu)
 
