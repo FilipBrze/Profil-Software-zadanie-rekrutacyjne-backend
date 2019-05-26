@@ -18,58 +18,57 @@ przypadku wygląda inaczej, ponieważ otrzymyawne są dane pojedynczo (nie w lin
 Wszystkie 3 skrypty z punktu widzenia użytkownika działają tak samo. W nieskończonej pętli skrypt prosi użytkownika o wpisanie komendy (znak zachęty ">>"). Z programu można wyjść wpisując "x" i zatwierdzając enterem (wielkość znaku czy spacje nie mają
 znaczenia).
 
-WAŻNA WIADOMOŚĆ ODNOŚNIE TESTOWANIA:
+**WAŻNA WIADOMOŚĆ ODNOŚNIE TESTOWANIA:**
 Ponieważ skrypty działają w pętli (dopóki nie poda się x aby wyjść) aby łatwiej było użytkownikowi wpisywać wiele komend, to aby 
 przetestować skrypt za pomocą pytest należy wykomentować ostatnią linię kodu w skrypcie (main()).
 main() --> #main()
 
-Główne zasady wpisywania komend:
-*spacje i wielkość liter jest bez znaczenia
-*należy zachować kolejność podawania parametrów
-*wszystkie komendy w formacie jakaś_komenda(parametr1;parametr2;...)
-*ważne jest aby zachować polskie znaki (np. województwo Slaskie nie zostanie rozpoznane - należy podać Śląskie)
-*należy pamiętać aby parametry oddzielać średnikiem i zapisywać zbiórczo w nawiasie okrągłym
-*płeć podaje się jako literę k dla kobiet i literę m dla mężczyzn. Jest opcjonalna dla każdej funkcji więc nie trzeba jej 
-podawać, przy czym nie ma znaczenia czy nie poda się nic poza resztą wymaganych parametrów czy zostawi puste miejsce po ostatnim
-średniku (płeć zawsze jest podawana na końcu)
+**Główne zasady wpisywania komend**
+- spacje i wielkość liter jest bez znaczenia
+- należy zachować kolejność podawania parametrów
+- wszystkie komendy w formacie jakaś_komenda(parametr1;parametr2;...)
+- ważne jest aby zachować polskie znaki (np. województwo Slaskie nie zostanie rozpoznane - należy podać Śląskie)
+- należy pamiętać aby parametry oddzielać średnikiem i zapisywać zbiórczo w nawiasie okrągłym
+- płeć podaje się jako literę k dla kobiet i literę m dla mężczyzn. Jest opcjonalna dla każdej funkcji więc nie trzeba jej 
+podawać, przy czym nie ma znaczenia czy nie poda się nic poza resztą wymaganych parametrów czy zostawi puste miejsce po ostatnimśredniku (płeć zawsze jest podawana na końcu)
 
 1. Do obliczenie średniej liczby osób, które przystąpiły do egzaminu dla danego województwa na przestrzeni lat, do podanego roku włącznie:   srednia(województwo;rok;płeć)
 Przykładowe poprawne wywołania:
 
-srednia(Pomorskie;2016)
-srednia(śląskie;  2011;)
-srednia   ( MAŁOPOLSKIE ;2011;k)
-srednia (mało polskie; 20 28;M)
+- srednia(Pomorskie;2016)
+- srednia(śląskie;  2011;)
+- srednia   ( MAŁOPOLSKIE ;2011;k)
+- srednia (mało polskie; 20 28;M)
 
 2. Do obliczenia procentowej zdawalności dla danego województwa na przestrzeni lat: zdawalnosc(województwo;płeć)
 Przykładowe poprawne wywołania:
 
-zdawalnosc(Kujawsko - pomorskie;)
-zdawalnosc(kujawsko-pomorskie;k)
-zdawalnosc (Świętokrzyskie)
-zdawalnosc(Pomorskie;M)
+- zdawalnosc(Kujawsko - pomorskie;)
+- zdawalnosc(kujawsko-pomorskie;k)
+- zdawalnosc (Świętokrzyskie)
+- zdawalnosc(Pomorskie;M)
 
 3. Podanie województwa o najlepszej zdawalności w konkretnym roku : najlepsza(rok;płeć)
 Przykładowe poprawne wywołania:
 
-najlepsza(2012)
-najlepsza(2012;m)
-najlepsza ( 2012 ; k)
+- najlepsza(2012)
+- najlepsza(2012;m)
+- najlepsza ( 2012 ; k)
 
-4.Wykrycie województw, które zanotowały regresję: regresja(płeć)
+4. Wykrycie województw, które zanotowały regresję: regresja(płeć)
 Przykładowe poprawne wywołania:
 
-regresja()
-regresja(k)
-regresja(m)
+- regresja()
+- regresja(k)
+- regresja(m)
 
 5. Dla porównania dwóch województw (wypisanie, które miało lepszą zdawalność na przestrzeni lat): porownaj(województwo1;województwo2;płeć)
 
 Przykładowe poprawne wywołania:
 
-porownaj(Pomorskie; Zachodniopomorskie;)
-porownaj (Zachodniopomorskie; Pomorskie)
-porownaj ( świętokrzyskie ; warmibsko- mazurskie;k)
-porown aj( małopolskie; WIELKOPOLSKIE; M)
+- porownaj(Pomorskie; Zachodniopomorskie;)
+- porownaj (Zachodniopomorskie; Pomorskie)
+- porownaj ( świętokrzyskie ; warmibsko- mazurskie;k)
+- porown aj( małopolskie; WIELKOPOLSKIE; M)
 
 
