@@ -67,7 +67,7 @@ Przykładowe poprawne wywołania:
 
 - porownaj(Pomorskie; Zachodniopomorskie;)
 - porownaj (Zachodniopomorskie; Pomorskie)
-- porownaj ( świętokrzyskie ; warmibsko- mazurskie;k)
+- porownaj ( świętokrzyskie ; warminsko- mazurskie;k)
 - porown aj( małopolskie; WIELKOPOLSKIE; M)
 
 
