@@ -1,7 +1,6 @@
-# Profil-Software-zadanie-rekrutacyjne-backend
-
+# Zadanie - tworzenie bazy danych na podstawie pliku csv i operacje na utworzonej bazie
 Dzień dobry,
-W niniejszym repozytorium umieściłem moje rozwiązania zadania rekrutacyjnego.
+W niniejszym repozytorium umieściłem moje rozwiązania zadania.
 W folderze głównym "Zadania" znajdują się trzy kolejne: 
 
 - "Bez_bonusow", w którym znajduje się plik Matury.py z właściwym kodem, który nie zawiera żadnych dodatkowych bibliotek i nie 
